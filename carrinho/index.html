@@ -4,9 +4,21 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title> Carrinho </title>
+		<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="./public/css/style.css">
+		<link href="https://www.ticketfire.com.br/css/bootstrap-select.css?v=2023.02.25" rel="stylesheet">
+		<script src="https://www.ticketfire.com.br/js/bootstrap.min.js?v=2023.02.25"></script>
+		<script src="https://www.ticketfire.com.br/js/bootstrap-select.js?v=2023.02.25"></script>
+		<script src="https://www.ticketfire.com.br/js/bootstrap-select-pt_br.js?v=2023.02.25"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	</head>
 	<body>
+
+		<div id="preloader">
+		    <div class="inner">
+		    	<h1> Store - Tech </h1>
+		    </div>
+		</div>
 
 		<div class="nav-bar">
 			<div class="centralizar">
@@ -16,7 +28,7 @@
 
 			<div class="card-btn">
 				<div class="align-btns">
-					<button class="btn-cart"><img src="./public/icon/cart.svg" alt="cart"/></button>
+					<button class="btn-cart" data-toggle="modal" data-target="#box-cart"><img src="./public/icon/cart.svg" alt="cart"/></button>
 					<button class="btn-exit"><img src="./public/icon/exit.svg" alt="exit"/></button>
 				</div>
 			</div>
@@ -29,12 +41,12 @@
 
 					<div class="grid-img">
 						<div class="center-img">
-							<img id="img-people" src="./public/img/people.svg">
+							<img id="img-people" class="animate__animated animate__fadeInDown" src="./public/img/people.svg">
 						</div>
 					</div>
 
 					<div class="grid-text">
-						<div class="center-text">
+						<div class="center-text animate__animated animate__fadeInUp">
 							<h1> Store - Tech </h1>
 							<p> Para entendermos melhor sobre esta loja <br> Aconselhamos que veja este
 								video de cunho educativo <br> Nele ensinamos nossos usuarios a navegar mais facilmente <br>
@@ -50,6 +62,19 @@
 				</div>
 			</div>
 		</div>
+
+		<div id="box-cart" class="fade">
+			<div class="box-cart-center">
+
+				<button type="button" onclick="close_modal('box-cart')" class="close">&times;</button>
+
+				<h1> Carrinho </h1>
+				<p> Acompanhe Seus Produtos Escolhidos por Aqui!</p>
+				<a> Você Possui <span class="amount-cart"> 112 </span> Itens, em seu carrinho!</a>
+			</div>
+		</div>
+
+	<script type="text/javascript" src="./public/js/script.js"></script>
 
 	</body>
 	</html>
