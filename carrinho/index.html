@@ -63,13 +63,41 @@
 			</div>
 		</div>
 
-		<div id="box-cart" class="fade">
+		<div id="box-cart" class="modal">
 			<div class="box-cart-contido">
-				<button type="button" onclick="close_modal('box-cart')" class="close">&times;</button>
+
+				<button type="button" data-dismiss="modal" class="close">&times;</button>
 
 				<h1> Carrinho </h1>
 				<p> Acompanhe Seus Produtos Escolhidos por Aqui!</p>
-				<a> Você Possui <span class="amount-cart"> 02 </span> Produtos, em seu carrinho!</a>
+				<a> Você Possui <span class="amount-cart"> 03 </span> Produtos, em seu carrinho!</a>
+
+				<div class="list-products">
+					<div class="row">
+
+						<div class="card-prod">
+							<img id="prod-img" src="./public/img/smartphone.png">
+							<a> Celular <span class="value-prod"> 1000$ </span></a>
+							<button class="delete-prod"><img src="./public/icon/trash.svg" alt="trash"/></button>
+						</div>
+
+						<div class="card-prod">
+							<img id="prod-img" src="./public/img/notebook.png">
+							<a> Notebook <span class="value-prod"> 1130$ </span></a>
+							<button class="delete-prod"><img src="./public/icon/trash.svg" alt="trash"/></button>
+						</div>
+
+						<div class="card-prod">
+							<img id="prod-img" src="./public/img/phone.png">
+							<a> Fone <span class="value-prod"> 130$ </span></a>
+							<button class="delete-prod"><img src="./public/icon/trash.svg" alt="trash"/></button>
+						</div>
+
+					</div>
+				</div>
+
+				<button class="btn-checkout"> Prosseguir </button>
+
 			</div>
 		</div>
 
