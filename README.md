@@ -5,6 +5,8 @@ Exemplo Sistema de Carrinho Loja
 
 *Carrinho de Compras*
 
+// Apenas Backend //
+
 HTML + CSS + JS
 
 ![image](https://user-images.githubusercontent.com/91894281/227748426-59b58d3b-3427-4a18-8c16-4f0036a38f6e.png)
