@@ -239,7 +239,7 @@
 		top: 0px;
 	}
 
-	.box-cart-center {
+	.box-cart-contido {
 		width: 100%;
 		height: 300px;
 		position: relative;
@@ -250,17 +250,17 @@
 		align-items: center;
 	}
 
-	.box-cart-center h1 {
+	.box-cart-contido h1 {
 		font-family: "coco";
 		color: white;
 	}
 
-	.box-cart-center p {
+	.box-cart-contido p {
 		font-family: "roboto";
 		color: #adadad;
 	}
 
-	.box-cart-center a {
+	.box-cart-contido a {
 		margin-top: 4px;
 		font-family: "roboto";
 		color:#d9d9d9;
